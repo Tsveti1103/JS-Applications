@@ -3,9 +3,7 @@ const endpoint = {
     catalog: '/data/pets?sortBy=_createdOn%20desc&distinct=name',
     create: '/data/pets',
     byId: '/data/pets/',
-    donate: '/data/donation',
-    donationCount: (petId) => `/data/donation?where=petId%3D%22${petId}%22&distinct=_ownerId&count`,
-    isDonate: (petId,userId)=> `/data/donation?where=petId%3D%22${petId}%22%20and%20_ownerId%3D%22${userId}%22&count`
+
 
 }
 
